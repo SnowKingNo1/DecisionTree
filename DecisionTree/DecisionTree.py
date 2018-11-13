@@ -180,10 +180,8 @@ def classify(inputTree, featLabels, testVec):
     :param: testVec:测试数据
     :return: 分类决策结果
     '''
-    # firstStr = inputTree.keys()[0]  python2.7
     firstStr = list(inputTree.keys())[0]  # python3 keys() 方法以列表返回一个字典所有的键。
     secondDict = inputTree[firstStr]
-    #featLabels.insert(2, 'house?')
     featLabels.insert(3, 'glasses')
     featIndex = featLabels.index(firstStr)
     key = testVec[featIndex]
@@ -224,8 +222,9 @@ if __name__ == "__main__":
 	filename = "myTree.txt"
 
 	myDat, labels = createDataSet()
+	#如果更换了数据集就要重新训练生成一颗树存到myTree.txt文件中，使用下面注释掉的三行代码
 	#myTree = createTree(myDat, labels)
-    #print(type(myTree), myTree)
+    	#print(type(myTree), myTree)
 	#storeTree(myTree, filename)
 	testVec = ['high', 'yes', 'yes', 'no']
 	inputTree = grabTree(filename)

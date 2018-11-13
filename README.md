@@ -6,7 +6,7 @@ We use ID3 and C4.5 algorithm respectively construct a tree which can classify s
 ## ID3 algorithm:
 --------
     1 Calculate the number of dataset characteristics of the dataset --> numFeatures
-2 Calculate the information entropy of the dataset --> Ent
+    2 Calculate the information entropy of the dataset --> Ent
 3 Initialization optimal information gain bestInfoGain=0.0; optimal gain characteristic bestFeature=-1
 4 for i in range(numFeatures):
 5     Get each column feature dataset --> uniqueVals

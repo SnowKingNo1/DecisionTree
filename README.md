@@ -23,6 +23,7 @@
 
 ## C4.5 algorithm:
 -------
+```Python
     1 Calculate the number of dataset characteristics of the dataset --> numFeatures
     2 Calculate the information entropy of the dataset --> Ent
     3 Initialization optimal information gain bestInfoGain=0.0; optimal gain characteristic bestFeature=-1
@@ -31,10 +32,11 @@
     6     for value in uniqueVals:
     7         Calculate the probability of value in the column feature --> H(D, a)
     8         Calculate the entropy --> Ent(D, a) corresponding to each value of the column feature
-    9         `Calculated feature entropy --> IV(a)`
+`    9         Calculated feature entropy --> IV(a)`
     10    Calculate the information gain --> Gain(D,a) of the feature of the i-th column
-    11    `Calculate the information gain rate of the feature of the i-th column --> infoGain= Gain(D,a)/ IV(a)`
+`    11    Calculate the information gain rate of the feature of the i-th column --> infoGain= Gain(D,a)/ IV(a)`
     12    if (infoGain > bestInfoGain):
     13    bestInfoGain <-- infoGain
     14    bestFeature <-- i
     15 return bestFeature
+```

@@ -1,5 +1,5 @@
 # DecisionTree
-========
+--------
     ID3 &amp; C4.5 of DecisionTree
     We use ID3 and C4.5 algorithm respectively construct a tree which can classify some data.
 ## ID3 algorithm:

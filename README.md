@@ -3,9 +3,9 @@
 ID3 &amp; C4.5 of DecisionTree
 We use ID3 and C4.5 algorithm respectively construct a tree which can classify some data.
 
-# ID3 algorithm:
+## ID3 algorithm:
 --------
-1 Calculate the number of dataset characteristics of the dataset --> numFeatures
+    1 Calculate the number of dataset characteristics of the dataset --> numFeatures
 2 Calculate the information entropy of the dataset --> Ent
 3 Initialization optimal information gain bestInfoGain=0.0; optimal gain characteristic bestFeature=-1
 4 for i in range(numFeatures):
@@ -19,7 +19,7 @@ We use ID3 and C4.5 algorithm respectively construct a tree which can classify s
 12    bestFeature <-- i
 13 return bestFeature
 
-# C4.5 algorithm:
+## C4.5 algorithm:
 -------
 1 Calculate the number of dataset characteristics of the dataset --> numFeatures
 2 Calculate the information entropy of the dataset --> Ent
